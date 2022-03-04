@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--i'm bad at web design ok-->
+        <title>Project Olympus</title>
+
+        <style type="text/css">
+            .content {
+                margin: auto;
+                max-width: 600px;
+                padding-left: 10px;
+            }
+
+            .content-heading, .section-heading {
+                padding-left: 10px;
+                margin-left: -10px;
+            }
+            
+            :is(.content-heading, .section-heading):hover {
+                border-left: 2px solid black;
+                padding-left: 8px;
+            }
+
+            ul { margin-left: -40px; }
+            li { list-style-type: none; }
+            li::before { content: '\03c9\20'; }
+            li:not(:first-child) { padding-top: 20px; }
+            li > a:first-child { font-weight: bold; }
+
+            a { text-decoration: none; }
+            a:link, a:visited { color: blue; }
+            :is(a:link, a:visited):hover {  text-decoration: underline; }
+        </style>
+    </head>
+    <body>
+        <div class="content">
+            <div>
+                <h1 class="content-heading">Project Olympus</h1>
+
+                <p><a href="https://github.com/projectolympus">Project Olympus</a> seeks to add features and
+                    improvements to Minecraft servers that are highly accessible to vanilla clients.</p>
+                
+                <p>Join our <a href="https://discord.gg/z93uwhDprh">Discord server</a> to request support, provide
+                    suggestions, and keep up with development.</p>
+            </div>
+
+            <div>
+                <h3 class="section-heading">Active Projects</h3>
+
+                <ul>
+                    <li><a href="https://github.com/projectolympus/keen-trade">Keen Trade</a> &ndash;
+                        Automatic Villager trading, and some other things.</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="section-heading">Future Projects</h3>
+                
+                <ul>
+                    <li><a>Glass Automation</a> &ndash; Item storage and automatic crafting system, uses Glass
+                        Panes to connect inventories.</li>
+                    <li><a>Drawers</a></li>
+                    <li><a>mui</a> &ndash; Minecraft UI library</li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
